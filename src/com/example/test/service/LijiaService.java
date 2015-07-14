@@ -1,5 +1,5 @@
 
-package com.example.test;
+package com.example.test.service;
 
 import android.app.Service;
 import android.content.Intent;

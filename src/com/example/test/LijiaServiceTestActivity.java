@@ -1,6 +1,8 @@
 
 package com.example.test;
 
+import com.example.test.service.LijiaService;
+
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;

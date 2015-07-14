@@ -65,11 +65,14 @@ public class MainActivity extends ActionBarActivity {
             Button btn3 = (Button) rootView.findViewById(R.id.test_btn3);
             Button btn4 = (Button) rootView.findViewById(R.id.test_btn4);
             btn1.setText("第一个activity");
-            btn2.setText("第二个activity");
             btn1.setOnClickListener(onClickListener);
+
+            btn2.setText("Hanlder test");
             btn2.setOnClickListener(onClickListener);
 
-            btn3.setVisibility(View.GONE);
+            btn3.setText("remote service test");
+            btn3.setOnClickListener(onClickListener);
+
             btn4.setVisibility(View.GONE);
             return rootView;
         }
@@ -86,8 +89,12 @@ public class MainActivity extends ActionBarActivity {
                         context.startActivity(intent);
                         break;
                     case R.id.test_btn2:
-                        Intent intent2 = new Intent(context, LijiaServiceTest2Activity.class);
+                        Intent intent2 = new Intent(context, HandlerTestActivity.class);
                         context.startActivity(intent2);
+                        break;
+                    case R.id.test_btn3:
+                        Intent intent3 = new Intent(context, RemoteServiceActivity.class);
+                        context.startActivity(intent3);
                         break;
 
                     default:

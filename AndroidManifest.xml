@@ -24,8 +24,13 @@
         </activity>
         <activity android:name="com.example.test.LijiaServiceTestActivity" />
         <activity android:name="com.example.test.LijiaServiceTest2Activity" />
+        <activity android:name="com.example.test.RemoteServiceActivity" />
+        <activity android:name="com.example.test.HandlerTestActivity" />
 
-        <service android:name="com.example.test.LijiaService" />
+        <service android:name="com.example.test.service.LijiaService" />
+        <service
+            android:name="com.example.test.service.RemoteService"
+            android:process=":remote" />
     </application>
 
 </manifest>
